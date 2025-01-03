@@ -4,7 +4,7 @@ class PopupColorItem(ft.PopupMenuItem):
     def __init__(self, color, name):
         super().__init__()
         self.content = ft.Row(
-            controls=[
+            controls = [
                 ft.Icon(name=ft.Icons.COLOR_LENS_OUTLINED, color=color),
                 ft.Text(name),
             ],
@@ -17,13 +17,16 @@ class PopupColorItem(ft.PopupMenuItem):
         self.page.update()
 
 
-class ThemeButton(ft.Row):
+class ThemeButton(ft.Column):
     def __init__(self):
         super().__init__()
+        self.alignment = ft.MainAxisAlignment.CENTER
+        self.horizontal_alignment = ft.CrossAxisAlignment.START
+        self.width = 75
         self.dark_light_icon = ft.IconButton(
-            icon=ft.Icons.BRIGHTNESS_2_OUTLINED,
-            tooltip="Toggle brightness",
-            on_click=self.theme_changed,
+            icon = ft.Icons.BRIGHTNESS_2_OUTLINED,
+            tooltip = "Toggle brightness",
+            on_click = self.theme_changed,
         )
         self.controls = [
             self.dark_light_icon
@@ -39,12 +42,13 @@ class ThemeButton(ft.Row):
         self.page.update()
 
 
-class SeedColorPicker(ft.Row):
+class SeedColorPicker(ft.Column):
     def __init__(self):
         super().__init__()
+        self.alignment = ft.MainAxisAlignment.CENTER
         self.controls = [
             ft.PopupMenuButton(
-                icon=ft.Icons.COLOR_LENS_OUTLINED,
+                icon = ft.Icons.COLOR_LENS_OUTLINED,
                 items=[
                     PopupColorItem(color="deeppurple", name="Deep purple (default)"),
                     PopupColorItem(color="indigo", name="Indigo"),

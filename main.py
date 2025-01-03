@@ -1,5 +1,6 @@
 import flet as ft
 from components.navbar import Navbar
+from components.counter import MainPage
 
 def main(page: ft.Page):
     page.title = "Pomodoro"
@@ -16,20 +17,10 @@ def main(page: ft.Page):
     }
 
     navbar = Navbar()
+    counter = MainPage()
 
-    contador = ft.Container(
-        alignment=ft.alignment.center,
-        expand=1,
-        padding=ft.padding.only(bottom=200),
-        content=ft.Text(
-            value="25:39",
-            size=205,
-            color=ft.Colors.PRIMARY,
-            font_family="Rampart One"
-        )
-    )
-
-    page.add(navbar, contador)
+    page.add(navbar, counter)
 
 if __name__ == "__main__":
     ft.app(target=main)
+ 
