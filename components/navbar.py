@@ -25,6 +25,7 @@ class ThemeButton(ft.Column):
         self.width = 75
         self.dark_light_icon = ft.IconButton(
             icon = ft.Icons.BRIGHTNESS_2_OUTLINED,
+            icon_color = ft.Colors.PRIMARY,
             tooltip = "Toggle brightness",
             on_click = self.theme_changed,
         )
@@ -49,6 +50,7 @@ class SeedColorPicker(ft.Column):
         self.controls = [
             ft.PopupMenuButton(
                 icon = ft.Icons.COLOR_LENS_OUTLINED,
+                icon_color = ft.Colors.PRIMARY,
                 items=[
                     PopupColorItem(color="deeppurple", name="Deep purple (default)"),
                     PopupColorItem(color="indigo", name="Indigo"),
