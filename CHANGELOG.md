@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.4
+
+Features:
+
+- improved button style
+
+
 ## 0.1.3
 
 Features:
