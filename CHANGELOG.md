@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.5
+
+Features:
+
+- separating the components into separate files
+
+
 ## 0.1.4
 
 Features:

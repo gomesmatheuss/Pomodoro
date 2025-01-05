@@ -1,6 +1,6 @@
 import flet as ft
 from components.navbar import Navbar
-from components.counter import MainPage
+from components.pomodoro_page import Pomodoro
 
 def main(page: ft.Page):
     page.title = "Pomodoro"
@@ -17,9 +17,9 @@ def main(page: ft.Page):
     }
 
     navbar = Navbar()
-    counter = MainPage()
+    pomodoro = Pomodoro()
 
-    page.add(navbar, counter)
+    page.add(navbar, pomodoro)
 
 if __name__ == "__main__":
     ft.app(target=main)
