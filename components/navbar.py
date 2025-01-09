@@ -22,7 +22,7 @@ class ThemeButton(ft.Column):
         super().__init__()
         self.alignment = ft.MainAxisAlignment.CENTER
         self.horizontal_alignment = ft.CrossAxisAlignment.START
-        self.width = 75
+        self.width = 60
         self.dark_light_icon = ft.IconButton(
             icon = ft.Icons.BRIGHTNESS_2_OUTLINED,
             icon_color = ft.Colors.PRIMARY,

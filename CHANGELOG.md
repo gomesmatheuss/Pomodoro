@@ -1,22 +1,35 @@
 # Changelog
 
-## 0.1.5
+## 0.2.0
 
 Features:
+
+- added start function to the counter
+
+Fix:
+
+- corrected CHANGELOG record, some fixes were classified as features
+- added space at the beginning of tests of CyclesStatistics
+- changed spaces in the navbar buttons
+
+
+## 0.1.5
+
+Fix:
 
 - separating the components into separate files
 
 
 ## 0.1.4
 
-Features:
+Fix:
 
 - improved button style
 
 
 ## 0.1.3
 
-Features:
+Fix:
 
 - adjusting the organization of some codes, and improving repeated codes
 
@@ -34,9 +47,12 @@ Features:
 
 Features:
 
-- improved code structure for navbar and counter
 - added changelog
 - added .gitignore
+
+Fix:
+
+- improved code structure for navbar and counter
 
 
 ## 0.1.0

@@ -4,6 +4,7 @@ class CyclesStatistics(ft.Column):
     def __init__(self):
         super().__init__()
         self.controls = [
+            ft.Container(height=15),
             self.CustomRow("Ciclos completos:", "0"),
             self.CustomRow("Horas trabalhadas:", "00:00:00"),
             self.CustomRow("Pomodoros completos:", "0")
